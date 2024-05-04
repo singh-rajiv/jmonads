@@ -190,7 +190,7 @@ public final class Result<T> {
      * Calls the given function and wraps its returned value, returning a new Result.
      *
      * @param f   the function to apply
-     * @param <U> the type of the new value
+     * @param <T> the type of the new value
      * @return a new Result containing the result of applying the function
      */
     @Contract("_ -> new")
@@ -206,7 +206,7 @@ public final class Result<T> {
      * Asynchronously calls the given function and wraps its returned value, returning a new Result.
      *
      * @param f   the function to apply
-     * @param <U> the type of the new value
+     * @param <T> the type of the new value
      * @return a CompletableFuture representing the new Result
      */
     @Contract("_ -> new")
